@@ -1,0 +1,38 @@
+categories:
+  - hep-ph
+  - hep-ex
+  - cs.CV
+  - cs.LG
+  - stat.ML
+  - physics.data-an
+
+keyword_logic: >-
+  (
+    "high-energy physics" or "high energy physics" or "particle physics" or "Large Hadron Collider" or "{LHC}" or "{CMS}" or "{ATLAS}" or "{LHCb}" or "collider" or
+    "proton-proton" or "jet " or "jets " or "parton" or "{QCD}" or "standard model" or "bottom quark" or "top quark" or "higgs boson" or "new particle" or "calorimeter"
+  ) and
+  (
+    "machine learn" or "machine-learn" or "deep learn" or "deep-learn" or "artificial intelligence" or "network" or "{DNN}" or "{CNN}" or "{RNN}" or "{GNN}" or
+    "transformer" or "convolution" or "generative adversarial network" or "{GAN}" or "autoencoder" or "auto-encoder" or "generative model" or "computer vision"
+  )
+
+af_options:
+  need_arxiv_source: true
+  reuse_arxiv_source: true # only used when need_arxiv_source is true
+  test_mode: true
+  test_paper_id: '2201.08187' # only used when test_mode is true
+
+openai:
+  api_key: sk-xxx # your openai api key
+  model: gpt-4-turbo
+  max_tokens: 1000
+  temperature: 1.2
+  optional_user_proxy: socks5h://127.0.0.1:xxxx
+  dryrun: false
+
+mail:
+  host: smtp.163.com
+  user: sender_address@163.com
+  password: PASSWORD
+  receiver: email_address@googlegroups.com
+  dryrun: false
